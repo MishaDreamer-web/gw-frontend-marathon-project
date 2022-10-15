@@ -96,10 +96,10 @@ collections:
                 widget: "select",
                 options:
                   [
-                    { label: "Общие вопросы", value: "general" },
+                    { label: "Общие вопросы", value: "Общие вопросы" },
                     { label: "VSCODE", value: "vscode" },
                   ],
-                default: [{ label: "Общие вопросы", value: "general" }],
+                default: [{ label: "Общие вопросы", value: "Общие вопросы" }],
               },
               {
                 label: "Questions",
@@ -195,10 +195,10 @@ collections:
                 required: true,
                 options:
                   [
-                    { label: "Загальні питання", value: "general" },
+                    { label: "Загальні питання", value: "Загальні питання" },
                     { label: "VSCODE", value: "vscode" },
                   ],
-                default: [{ label: "Загальні питання", value: "general" }],
+                default: "Загальні питання",
               },
               { label: "Questions", name: "questions", widget: "list", fields: [
                     {

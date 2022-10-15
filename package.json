@@ -8,11 +8,11 @@
     "gatsby"
   ],
   "scripts": {
-    "clean": "gatsby clean",
-    "develop": "gatsby clean && gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve"
+    "develop": "npm run clean && gatsby develop",
+    "start": "npm run develop",
+    "build": "npm run clean && gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "gatsby": "^4.24.4",
