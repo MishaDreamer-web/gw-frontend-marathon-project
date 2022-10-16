@@ -7,6 +7,10 @@ subhead:
     questions:
       - image:
           alt: image for answer
-        question_title: h﻿ello
-        description: h﻿ello
+          image: structure.png
+        question_title: Не вантажить проект на хостинг, що робити?
+        description: |-
+          Перевірте структуру вашого проекту, який завантажуєте на Netlify.
+
+          А також назву файлу index.html
 ---
