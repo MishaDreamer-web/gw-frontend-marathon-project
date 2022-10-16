@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import Layout from "../components/Layout/Layout";
 import { graphql } from "gatsby";
+import Markdown from "markdown-to-jsx";
 
 // const IndexPage = () => {
 const IndexPage = ({ data }) => {
@@ -38,8 +39,12 @@ const IndexPage = ({ data }) => {
                         {questions.map((question, index) => {
                           return (
                             <li key={index}>
-                              <h2>{question.question_title}</h2>
-                              <p>{question.description}</p>
+                              <h2>
+                                <Markdown>{question.question_title}</Markdown>
+                              </h2>
+                              <p>
+                                <Markdown>{question.description}</Markdown>
+                              </p>
                             </li>
                           );
                         })}
@@ -57,8 +62,10 @@ const IndexPage = ({ data }) => {
 export default IndexPage;
 
 export const query = graphql`
-  query MyQuery {
-    allMarkdownRemark(filter: { frontmatter: { language: { eq: "ua" } } }) {
+  query ($language: String!) {
+    allMarkdownRemark(
+      filter: { frontmatter: { language: { eq: $language } } }
+    ) {
       nodes {
         frontmatter {
           chapter
@@ -75,8 +82,31 @@ export const query = graphql`
         id
       }
     }
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
   }
 `;
+
+// export const query = graphql`
+//   query ($language: String!) {
+//     locales: allLocale(filter: { language: { eq: $language } }) {
+//       edges {
+//         node {
+//           ns
+//           data
+//           language
+//         }
+//       }
+//     }
+//   }
+// `;
 
 // export const query = graphql`;
 //   query MainPage {
