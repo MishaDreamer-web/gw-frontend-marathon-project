@@ -7,7 +7,7 @@ subhead:
     questions:
       - image:
           alt: image for answer
-          image: giphy.gif
+          image: ""
         question_title: Можно ли с телефона проходить марафон?
         description: Для успешного прохождения марафона потребуется компьютер или
           ноутбук. Ведь вы начинающие программисты и обязательно будете
