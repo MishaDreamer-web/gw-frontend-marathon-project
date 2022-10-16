@@ -1,12 +1,14 @@
 import * as React from "react";
 import { Link, useI18next } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 const Layout = ({ pageTitle, children }) => {
   const { languages, changeLanguage } = useI18next();
+  const { t } = useTranslation();
   return (
     <div>
       <header>
-        <h1>Питання та відповіді</h1>
+        <h1>{t("Title")}</h1>
         <ul>
           {languages.map((lng) => (
             <li key={lng}>

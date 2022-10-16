@@ -3,16 +3,18 @@ import { useState } from "react";
 import Layout from "../components/Layout/Layout";
 import { graphql } from "gatsby";
 import Markdown from "markdown-to-jsx";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 // const IndexPage = () => {
 const IndexPage = ({ data }) => {
+  const { t } = useTranslation();
   const days = data.allMarkdownRemark.nodes;
   const [openedDayId, setOpenedDayId] = useState(days[0].id || 0);
   // const [lang, setLang] = useState("ua");
   console.log(days);
   return (
     <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+      <p>{t("Subtitle")}</p>
       <ul>
         {days
           ? days?.map(({ id, frontmatter }) => {
