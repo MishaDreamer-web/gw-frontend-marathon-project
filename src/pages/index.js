@@ -8,7 +8,7 @@ import Markdown from "markdown-to-jsx";
 const IndexPage = ({ data }) => {
   const days = data.allMarkdownRemark.nodes;
   const [openedDayId, setOpenedDayId] = useState(days[0].id || 0);
-  const [lang, setLang] = useState("ua");
+  // const [lang, setLang] = useState("ua");
   console.log(days);
   return (
     <Layout pageTitle="Home Page">

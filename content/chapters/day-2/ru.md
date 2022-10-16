@@ -9,7 +9,8 @@ subhead:
           alt: image for answer
           image: ""
         question_title: Можно ли с телефона проходить марафон?
-        description: Для успешного прохождения марафона потребуется компьютер или
+        description:
+          Для успешного прохождения марафона потребуется компьютер или
           ноутбук. Ведь вы начинающие программисты и обязательно будете
           "верстать" по-настоящему 👌
       - image:
@@ -20,7 +21,7 @@ subhead:
           Нажмите <code>ctrl + /</code>
 
 
-          <﻿iframe src="https://giphy.com/embed/Vbzq0GcG0CY2PNGeQq" width="480"  height="240" allowfullscreen></iframe>
+          <iframe src="https://giphy.com/embed/Vbzq0GcG0CY2PNGeQq" width="480"  height="240"  allowfullscreen></iframe>
 
 
           [via GIPHY](https://giphy.com/gifs/Vbzq0GcG0CY2PNGeQq)
