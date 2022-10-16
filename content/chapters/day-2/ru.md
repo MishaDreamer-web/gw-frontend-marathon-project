@@ -20,9 +20,7 @@ subhead:
         description: >-
           Нажмите <code>ctrl + /</code>
 
-
           <iframe src="https://giphy.com/embed/Vbzq0GcG0CY2PNGeQq" width="480"  height="240"  allowfullscreen></iframe>
 
-
-          [via GIPHY](https://giphy.com/gifs/Vbzq0GcG0CY2PNGeQq)
+          <a href="https://giphy.com/gifs/Vbzq0GcG0CY2PNGeQq" target="_blank" rel="noopener noreferrer nofollow">via GIPHY</a>
 ---
