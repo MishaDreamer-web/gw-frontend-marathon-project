@@ -3,7 +3,7 @@ chapter: day-6
 title: День 6
 language: ua
 subhead:
-  - subhead_title: general
+  - subhead_title: Загальні питання
     questions:
       - image:
           alt: image for answer
