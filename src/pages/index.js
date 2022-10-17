@@ -10,8 +10,7 @@ const IndexPage = ({ data }) => {
   const { t } = useTranslation();
   const days = data.allMarkdownRemark.nodes;
   const [openedDayId, setOpenedDayId] = useState(days[0].id || 0);
-  // const [lang, setLang] = useState("ua");
-  console.log(days);
+
   return (
     <Layout pageTitle="Home Page">
       <p>{t("Subtitle")}</p>
